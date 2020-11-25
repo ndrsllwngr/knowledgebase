@@ -1,7 +1,4 @@
-# Cheatsheet
-
-## Python
-
+# Python Cheatsheet
 ### Pyenv (Python Version Management)
 Manage multiple python versions comfortably
 #### Installation
