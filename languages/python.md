@@ -1,33 +1,29 @@
 # Python
-## Pyenv (Python Version Management)
-Manage multiple python versions comfortably
-### Installation
+## Getting started
+Use [`pyenv`](https://github.com/pyenv/pyenv) (Python Version Management) to manage multiple python versions comfortably.
+
 1. Install via [Homebrew](https://brew.sh)
 ```sh 
 brew update
 brew install pyenv
 ```
-2.   **Add `pyenv init` to your shell** to enable shims and autocompletion.
-   Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell
-   configuration file since it manipulates `PATH` during the initialization.
+2.   **Add `pyenv init` to your shell** to enable shims and autocompletion. Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell configuration file since it manipulates `PATH` during the initialization. (_bash specific_: Modify your `~/.bash_profile` file instead of `~/.zshrc`.)
 ```sh
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 ```
-    
-- **Bash note**: Modify your `~/.bash_profile` file instead of `~/.zshrc`.
-
 3. Restart shell
 ```sh 
 source ~/.zshrc
 ```
-### Usage
 
-#### Download specific python version
+## Usage
+
+### Download specific python version
 ```sh 
 pyenv install 3.5.0
 ```
 
-#### List available python versions
+### List available python versions
 ```sh 
 pyenv versions
 ```
@@ -41,9 +37,8 @@ pyenv local 3.x.x
 pyenv global 3.x.x
 ```
 
-
 ## Virtual environments
-### Create virtual environment & activate it
+### Create & activate virtual environment
 ```sh 
 python3 -m venv venv 
 source venv/bin/activate
@@ -60,7 +55,7 @@ pip install -r requirements.txt
 ```
     
 ### Uninstall virtual environment
-1. *(Optionally)* Deactivate venv
+1. *(Optional)* Deactivate venv
 ```sh 
 deactivate
 ```

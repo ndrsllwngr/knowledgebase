@@ -2,6 +2,6 @@
 
 ## Installation
 
-- nvm
+- Use `nvm`
 - .nvmrc
 - LTS

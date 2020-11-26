@@ -2,8 +2,8 @@
 Snippets that save time.
 
 ##### Languages
-- **Node.js**: [Installation](languages/nodejs.md)
-- **Python**: [Installation](languages/python.md#Installation) * [Usage](languages/python.md#Usage) * [Virtual environments](languages/python.md#Virtual-environments)
+- **Node.js**: [Getting started](languages/nodejs.md)
+- **Python**: [Getting started](languages/python.md#getting-started) * [Usage](languages/python.md#usage) * [Virtual environments](languages/python.md#virtual-environments)
 - **Rust**:
 - **Java**:
 - **bash**:
