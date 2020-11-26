@@ -23,4 +23,4 @@ Snippets that save time.
 
 ### Applications
 - **Visual Studio Code**:
-- **Shell**:
+- **Shell**: [Getting started](applications/shell.md)
