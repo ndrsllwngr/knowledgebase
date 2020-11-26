@@ -1,61 +1,70 @@
 # Python
-## Getting started
-Use [`pyenv`](https://github.com/pyenv/pyenv) (Python Version Management) to manage multiple python versions comfortably.
-
+## Getting Started
+We highly reccomend you to install and get familiar with the following tools before starting to work with python productively, they will save you a lot of time and problems.
+### Pyenv (Python Version Management)
+Manage multiple python versions comfortably
+#### Installation
 1. Install via [Homebrew](https://brew.sh)
 ```sh 
 brew update
 brew install pyenv
 ```
-2.   **Add `pyenv init` to your shell** to enable shims and autocompletion. Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell configuration file since it manipulates `PATH` during the initialization. (_bash specific_: Modify your `~/.bash_profile` file instead of `~/.zshrc`.)
+2.   **Add `pyenv init` to your shell** to enable shims and autocompletion.
+   Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell
+   configuration file since it manipulates `PATH` during the initialization.
 ```sh
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 ```
+    
+- **Bash note**: Modify your `~/.bash_profile` file instead of `~/.zshrc`.
+
 3. Restart shell
 ```sh 
 source ~/.zshrc
 ```
 
-## Usage
-
-### Download specific python version
+#### Download specific python version
 ```sh 
-pyenv install 3.5.0
+pyenv install 3.7.0
 ```
 
-### List available python versions
+#### List available python versions
 ```sh 
 pyenv versions
 ```
 
-### Activate version locally
+#### Activate a specific version locally
+*This sets the Python version for the current folder and all subfolders.*
 ```sh 
-pyenv local 3.x.x
+pyenv local 3.7.0
 ```
-### Activate version global
+#### Activate a specific version globally
 ```sh 
-pyenv global 3.x.x
+pyenv global 3.7.0
 ```
 
-## Virtual environments
-### Create & activate virtual environment
+
+### Virtual environments
+Don't clutter your global pip installation, use one virtual environment per project instead. \
+**Important:** Create virtual environment in project folder
+#### Create a virtual environment & activate it
 ```sh 
 python3 -m venv venv 
 source venv/bin/activate
 ```
 
-### Deactivate virtual environment
+#### Deactivate virtual environment
 ```sh 
 deactivate
 ```
 
-### Install requirements
+#### Install dependencies from a requirements file
 ```sh 
 pip install -r requirements.txt 
 ```
     
-### Uninstall virtual environment
-1. *(Optional)* Deactivate venv
+#### Uninstall virtual environment
+1. *(Optionally)* Deactivate venv
 ```sh 
 deactivate
 ```
