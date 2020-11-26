@@ -26,5 +26,6 @@ Snippets that save time.
 - [macOS](os/mac_os.md)
 
 ### Applications
-- [Visual Studio Code](applications/visual_studio_code.md)
+- [Git](applications/git.md)
 - [Shell](applications/shell.md)
+- [Visual Studio Code](applications/visual_studio_code.md)
