@@ -1,4 +1,7 @@
 # Java
+
+Java is a class-based, object-oriented programming language.
+
 ## Getting Started
 We highly reccomend you to install and get familiar with the following tools before starting to work with java productively, they will save you a lot of time and problems.
 
