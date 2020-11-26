@@ -1,26 +1,30 @@
 # knowledgebase
 Snippets that save time.
 
-
-
 ### Languages
-- **Java**:
-- **Node.js**: [Getting started](languages/nodejs.md)
-- **Python**: [Getting started](languages/python.md)
-- **Rust**:
-
+- [CSS](languages/css.md)
+- [Haskell](languages/haskell.md)
+- [HTML](languages/html.md)
+- [Java](languages/java.md)
+- [JavaScript](languages/javascript.md)
+- [Prolog](languages/prolog.md)
+- [Python](languages/python.md)
+- [Rust](languages/rust.md)
+- [Scala](languages/scala.md)
+- [TypeScript](languages/typescript.md)
 
 ### Frameworks
-- **Android native**:
-- **Next.js**: 
-- **Node.js**:
-- **React.js**:
+- [Android native](frameworks/android_native.md)
+- [Next.js](frameworks/next_js.md)
+- [Node.js](frameworks/node_js.md)
 
+### Libraries
+- [React](libraries/react.md)
 
 ### OS
-- **macOS**:
-- **linux**:
+- [Linux](os/linux.md)
+- [macOS](os/mac_os.md)
 
 ### Applications
-- **Visual Studio Code**:
-- **Shell**: [Getting started](applications/shell.md)
+- [Visual Studio Code](applications/visual_studio_code.md)
+- [Shell](applications/shell.md)
