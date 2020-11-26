@@ -8,8 +8,8 @@
 
 ## Getting Started
 - [https://www.python.org/about/gettingstarted/](https://www.python.org/about/gettingstarted/)
-- We highly reccomend you to install and get familiar with the following tools before starting to work with python productively, they will save you a lot of time and problems.
-- 
+- We highly recommend you to install and get familiar with the following tools before starting to work with python productively, they will save you a lot of time and problems.
+
 ### Pyenv (Python Version Management)
 Manage multiple python versions comfortably
 #### Installation
