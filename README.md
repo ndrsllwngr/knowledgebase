@@ -2,16 +2,16 @@
 Snippets that save time.
 
 ##### Languages
-- **Node.js**: [Install](node.js/install.md)
-- **Python**:
+- **Node.js**: [Installation](languages/nodejs.md)
+- **Python**: [Installation](languages/python.md#Installation) * [Usage](languages/python.md#Usage) * [Virtual environments](languages/python.md#Virtual-environments)
 - **Rust**:
 - **Java**:
 - **bash**:
 
 ##### OS
-- **macOS**:
+- **macOS**: [Clean Install](languages/macos.md)
 - **linux**:
 
-##### Programs
+##### Applications
 - **Visual Studio Code**:
 - **zsh**:

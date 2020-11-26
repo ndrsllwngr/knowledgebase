@@ -1,7 +1,7 @@
-# Python Cheatsheet
-### Pyenv (Python Version Management)
+# Python
+## Pyenv (Python Version Management)
 Manage multiple python versions comfortably
-#### Installation
+### Installation
 1. Install via [Homebrew](https://brew.sh)
 ```sh 
 brew update
@@ -20,46 +20,46 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 ```sh 
 source ~/.zshrc
 ```
-#### Usage
+### Usage
 
-##### Download specific python version
+#### Download specific python version
 ```sh 
 pyenv install 3.5.0
 ```
 
-##### List available python versions
+#### List available python versions
 ```sh 
 pyenv versions
 ```
 
-#### Activate version locally
+### Activate version locally
 ```sh 
 pyenv local 3.x.x
 ```
-#### Activate version global
+### Activate version global
 ```sh 
 pyenv global 3.x.x
 ```
 
 
-### Virtual environments
-#### Create virtual environment & activate it
+## Virtual environments
+### Create virtual environment & activate it
 ```sh 
 python3 -m venv venv 
 source venv/bin/activate
 ```
 
-#### Deactivate virtual environment
+### Deactivate virtual environment
 ```sh 
 deactivate
 ```
 
-#### Install requirements
+### Install requirements
 ```sh 
 pip install -r requirements.txt 
 ```
     
-#### Uninstall virtual environment
+### Uninstall virtual environment
 1. *(Optionally)* Deactivate venv
 ```sh 
 deactivate

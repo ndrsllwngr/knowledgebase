@@ -1,5 +1,0 @@
-##### DRAFT
-
-- nvm
-- .nvmrc
-- LTS
