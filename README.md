@@ -1,17 +1,26 @@
 # knowledgebase
 Snippets that save time.
 
-##### Languages
-- **Node.js**: [Getting started](languages/nodejs.md)
-- **Python**: [Getting started](languages/python.md#getting-started) * [Usage](languages/python.md#usage) * [Virtual environments](languages/python.md#virtual-environments)
-- **Rust**:
-- **Java**:
-- **bash**:
 
-##### OS
-- **macOS**: [Clean Install](languages/macos.md)
+
+### Languages
+- **Java**:
+- **Node.js**: [Getting started](languages/nodejs.md)
+- **Python**: [Getting started](languages/python.md)
+- **Rust**:
+
+
+### Frameworks
+- **Android native**:
+- **Next.js**: 
+- **Node.js**:
+- **React.js**:
+
+
+### OS
+- **macOS**:
 - **linux**:
 
-##### Applications
+### Applications
 - **Visual Studio Code**:
-- **zsh**:
+- **Shell**:
