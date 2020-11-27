@@ -23,6 +23,24 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ## Useful commands
+
+#### Add local project to fresh Git(hub) repository
+```sh
+cd ~/your/project/path
+# Initialize new local git
+git init
+
+# Add all local files to your local repositore 
+# Pro tip: Add/Check your .gitignore to not check in local configs like your .idea folder etc.
+git add .
+
+# Commit your files
+git commit -m 'Initialize Project'
+
+# Link your remote repository
+git remote add origin git@github.com:you/your-new-project.git
+```
+
 #### Clone repository
 ```sh
 git clone git@github.com:ndrsllwngr/knowledgebase.git
@@ -44,27 +62,24 @@ git commit "Very important changes"
 # Push your new local branch to the remote repostory
 git push --set-upstream origin incredibly_descriptive_branch_name
 ```
-#### Reset (local) branch to match remote branch
+
+#### Undo last commit locally (keep changes)
 ```sh
-git fetch origin
-git reset --hard origin/master
+git reset --soft HEAD^
 ```
 
-#### Add local project to fresh Git(hub) repository
+#### Reset local branch (throw away changes)
 ```sh
-cd ~/your/project/path
-# Initialize new local git
-git init
+git reset --hard HEAD^
+```
 
-# Add all local files to your local repositore 
-# Pro tip: Add/Check your .gitignore to not check in local configs like your .idea folder etc.
-git add .
+#### Delete branch
+```sh
+// delete locally
+git branch -d your_local_branch_name
 
-# Commit your files
-git commit -m 'Initialize Project'
-
-# Link your remote repository
-git remote add origin git@github.com:you/your-new-project.git
+// delete remotely
+git push origin --delete your_remote_branch_name
 ```
 
 ## Resources
