@@ -35,7 +35,14 @@ git checkout branch_name
 
 #### Create new (local) branch
 ```sh
-git checkout -b branch_name
+git checkout -b incredibly_descriptive_branch_name
+
+# Commit some changes
+git add .
+git commit "Very important changes"
+
+# Push your new local branch to the remote repostory
+git push --set-upstream origin incredibly_descriptive_branch_name
 ```
 #### Reset (local) branch to match remote branch
 ```sh
