@@ -2,7 +2,9 @@
 ## Getting Started
 We highly reccomend you to use a modified shell to maximise your experince usig the shell.
 ### Oh my zsh
-Manage multiple python versions comfortably
+[Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is an open source, community-driven framework for managing your zsh configuration.
+
+**It will not make you a 10x developer...but you may feel like one.**
 #### Prerequisites
 
 - A Unix-like operating system: macOS, Linux, BSD. 
@@ -60,7 +62,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
-**Important:** Don't forget to add your plugin to your .zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
+**Important:** Don't forget to [enable your plugin](#using-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
 
 #### Themes
 
