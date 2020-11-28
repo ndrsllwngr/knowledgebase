@@ -1,4 +1,7 @@
-# Rust
+---
+id: rust
+title: Rust
+---
 
 ## About
 > Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. Rust is syntactically similar to C++, but can guarantee memory safety by using a borrow checker to validate references. Rust achieves memory safety without garbage collection, and reference counting is optional.

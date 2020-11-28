@@ -1,4 +1,7 @@
-# macOS
+---
+id: macos
+title: macOS
+---
 
 ## About
 > macOS (/ˌmækoʊˈɛs/; previously Mac OS X and later OS X) is a series of proprietary graphical operating systems developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac computers.
@@ -27,7 +30,7 @@
 3. Type or paste one of the following commands in Terminal. These assume that the installer is still in your Applications folder, and the name of your volume is `MyVolume`. If it's named differently, replace `MyVolume` accordingly.
 
 macOS High Sierra (10.13):
-```bash
+```shell
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ macOS\ High\ Sierra.app
 ```
 4. Press Return after typing the command.

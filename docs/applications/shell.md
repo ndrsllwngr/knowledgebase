@@ -1,4 +1,8 @@
-# Shell
+---
+id: shell
+title: Shell
+---
+
 ## Getting Started
 We highly reccomend you to use a modified shell to maximise your experince usig the shell.
 ### Oh my zsh
@@ -30,13 +34,13 @@ Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can
 
 Once you spot a plugin (or several) that you'd like to use with Oh My Zsh, you'll need to enable them in the `.zshrc` file. You'll find the zshrc file in your `$HOME` directory. Open it with your favorite text editor and you'll see a spot to list all the plugins you want to load.
 
-```sh
+```shell
 nano ~/.zshrc
 ```
 
 For example, this might begin to look like this:
 
-```sh
+```shell
 plugins=(
   git 
   zsh-autosuggestions
@@ -53,12 +57,12 @@ Each plugin includes a __README__, documenting it. This README should show the a
 ##### Recommended Plugins
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-```sh
+```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-```sh
+```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
@@ -74,13 +78,13 @@ _Robby's theme is the default one. It's not the fanciest one. It's not the simpl
 
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
 
-```sh
+```shell
 ZSH_THEME="robbyrussell"
 ```
 
 To use a different theme, simply change the value to match the name of your desired theme. For example:
 
-```sh
+```shell
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
 # see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 ```
@@ -95,13 +99,13 @@ In case you did not find a suitable theme for your needs, please have a look at 
 
 If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
 
-```sh
+```shell
 ZSH_THEME="random" # (...please let it be pie... please be some pie..)
 ```
 
 And if you want to pick random theme from a list of your favorite themes:
 
-```sh
+```shell
 ZSH_THEME_RANDOM_CANDIDATES=(
   "robbyrussell"
   "agnoster"
@@ -111,20 +115,20 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 #### Configuration
 In order to configure your zsh modify your ~/.zshrc file. \
 **Pro tip:** use *nano* instead of vim:
-```sh
+```shell
 nano ~/.zshrc
 ```
 
 ##### Disable user@host prefix
 *Append the following line to your ~/.zshrc file:*
-```sh
+```shell
 # Remove user@host from shell
 prompt_context(){}
 ```
 
 ##### Add PATH variables
 *Append the following line(s) to your ~/.zshrc file:*
-```sh
+```shell
 export PATH=/your/very/special/path:$PATH
 # Use quotes if you like
 export PATH="/your/very/special/path:$PATH"

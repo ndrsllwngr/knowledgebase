@@ -1,4 +1,8 @@
-# Next.js
+---
+id: next_js
+title: Next.js
+---
+
 
 ## About
 > Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications.

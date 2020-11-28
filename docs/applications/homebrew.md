@@ -1,4 +1,8 @@
-# Homebrew
+---
+id: homebrew
+title: Homebrew
+---
+
 
 ## About
 > Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS operating system and Linux

@@ -1,4 +1,7 @@
-# Python
+---
+id: python
+title: Python
+---
 
 ## About
 > Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
@@ -14,41 +17,41 @@
 Manage multiple python versions comfortably
 #### Installation
 1. Install via [Homebrew](https://brew.sh)
-```sh 
+```shell 
 brew update
 brew install pyenv
 ```
 2.   **Add `pyenv init` to your shell** to enable shims and autocompletion.
    Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell
    configuration file since it manipulates `PATH` during the initialization.
-```sh
+```shell
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 ```
     
 - **Bash note**: Modify your `~/.bash_profile` file instead of `~/.zshrc`.
 
 3. Restart shell
-```sh 
+```shell 
 source ~/.zshrc
 ```
 
 #### Download specific python version
-```sh 
+```shell 
 pyenv install 3.7.0
 ```
 
 #### List available python versions
-```sh 
+```shell 
 pyenv versions
 ```
 
 #### Activate a specific version locally
 *This sets the Python version for the current folder and all subfolders.*
-```sh 
+```shell 
 pyenv local 3.7.0
 ```
 #### Activate a specific version globally
-```sh 
+```shell 
 pyenv global 3.7.0
 ```
 
@@ -57,27 +60,27 @@ pyenv global 3.7.0
 Don't clutter your global pip installation, use one virtual environment per project instead. \
 **Important:** Create virtual environment in project folder
 #### Create a virtual environment & activate it
-```sh 
+```shell 
 python3 -m venv venv 
 source venv/bin/activate
 ```
 
 #### Deactivate virtual environment
-```sh 
+```shell 
 deactivate
 ```
 
 #### Install dependencies from a requirements file
-```sh 
+```shell 
 pip install -r requirements.txt 
 ```
     
 #### Uninstall virtual environment
 1. *(Optionally)* Deactivate venv
-```sh 
+```shell 
 deactivate
 ```
 2. Remove venv folder
-```sh 
+```shell 
 rm -rf venv 
 ```

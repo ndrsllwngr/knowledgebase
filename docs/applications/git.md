@@ -1,4 +1,7 @@
-# Git
+---
+id: git
+title: Git
+---
 
 ## About
 > Git (/ɡɪt/) is a distributed version-control system for tracking changes in any set of files, originally designed for coordinating work among programmers cooperating on source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
@@ -13,7 +16,7 @@
 In order to be able to communicate with your repositories via SSH you need to first generate a new SSH key (if you haven't already) and add it to your GitHub, bitBucket etc. account.
 
 #### Generate SSH key
-```sh
+```shell
 # This generates a new ssh key which will be stored in your ~/.ssh/ folder. 
 # Hint: you will be asked if you want to set a passphrase aka. a password for your ssh key which you will be asked everytime you use it. This is optional.
 ssh-keygen -t rsa -C "your_email@example.com"
@@ -25,7 +28,7 @@ cat ~/.ssh/id_rsa.pub
 ## Useful commands
 
 #### Add local project to fresh Git(hub) repository
-```sh
+```shell
 cd ~/your/project/path
 # Initialize new local git
 git init
@@ -42,17 +45,17 @@ git remote add origin git@github.com:you/your-new-project.git
 ```
 
 #### Clone repository
-```sh
+```shell
 git clone git@github.com:ndrsllwngr/knowledgebase.git
 ```
 
 #### Checkout branch 
-```sh
+```shell
 git checkout branch_name
 ```
 
 #### Create new (local) branch
-```sh
+```shell
 git checkout -b incredibly_descriptive_branch_name
 
 # Commit some changes
@@ -64,17 +67,17 @@ git push --set-upstream origin incredibly_descriptive_branch_name
 ```
 
 #### Undo last commit locally (keep changes)
-```sh
+```shell
 git reset --soft HEAD^
 ```
 
 #### Reset local branch (throw away changes)
-```sh
+```shell
 git reset --hard HEAD^
 ```
 
 #### Delete branch
-```sh
+```shell
 // delete locally
 git branch -d your_local_branch_name
 
