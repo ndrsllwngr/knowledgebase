@@ -42,4 +42,7 @@ Temporary Items
 .history
 .ionide
 
+# Jetbrains
+.idea
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
