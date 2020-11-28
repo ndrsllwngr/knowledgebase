@@ -1,16 +1,16 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'knowledgebase',
+  tagline: 'Snippets that save time.',
+  url: 'https://github.andreasellwanger.com/knowledgebase/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ndrsllwngr', // Usually your GitHub org/user name.
+  projectName: 'knowledgebase', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'knowledgebase',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -24,7 +24,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.andreasellwanger.com/knowledgebase/',
           label: 'GitHub',
           position: 'right',
         },
