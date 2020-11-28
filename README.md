@@ -1,31 +1,33 @@
-# knowledgebase
-Snippets that save time.
+# Website
 
-### Languages
-- [CSS](languages/css.md)
-- [Haskell](languages/haskell.md)
-- [HTML](languages/html.md)
-- [Java](languages/java.md)
-- [JavaScript](languages/javascript.md)
-- [Prolog](languages/prolog.md)
-- [Python](languages/python.md)
-- [Rust](languages/rust.md)
-- [Scala](languages/scala.md)
-- [TypeScript](languages/typescript.md)
+This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-### Frameworks
-- [Android native](frameworks/android_native.md)
-- [Next.js](frameworks/next_js.md)
-- [Node.js](frameworks/node_js.md)
+## Installation
 
-### Libraries
-- [React](libraries/react.md)
+```console
+yarn install
+```
 
-### OS
-- [Linux](os/linux.md)
-- [macOS](os/mac_os.md)
+## Local Development
 
-### Applications
-- [Git](applications/git.md)
-- [Shell](applications/shell.md)
-- [Visual Studio Code](applications/visual_studio_code.md)
+```console
+yarn start
+```
+
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
