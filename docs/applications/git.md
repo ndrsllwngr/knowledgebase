@@ -78,10 +78,10 @@ git reset --hard HEAD^
 
 #### Delete branch
 ```shell
-// delete locally
+# delete locally
 git branch -d your_local_branch_name
 
-// delete remotely
+# delete remotely
 git push origin --delete your_remote_branch_name
 ```
 
