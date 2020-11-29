@@ -4,7 +4,7 @@ title: Linux
 ---
 
 ## Ubuntu 20.04
-### Use mac keyboard with Ubuntu - Map Ctrl to CMD ([src](https://askubuntu.com/a/808588))
+### Apple keyboard: map CTRL to CMD ([src](https://askubuntu.com/a/808588))
 
 Install `gnome-tweaks` https://linuxhint.com/gnome_tweak_installation_ubuntu/
 - Open `Tweaks`
