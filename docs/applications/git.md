@@ -85,6 +85,20 @@ git branch -d your_local_branch_name
 git push origin --delete your_remote_branch_name
 ```
 
+## Edit history
+
+### Remove secret
+- use [https://rtyley.github.io/bfg-repo-cleaner/](https://rtyley.github.io/bfg-repo-cleaner/)
+
+### Delete folders
+- [https://rtyley.github.io/bfg-repo-cleaner/](https://rtyley.github.io/bfg-repo-cleaner/)
+```shell
+# bfg equals java -jar bfg.jar
+java -jar bfg-1.13.0.jar --delete-folders docs --no-blob-protection
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+```
+
+
 ## Resources
 - [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
 - [http://ohshitgit.com/](http://ohshitgit.com/)
