@@ -8,7 +8,7 @@ title: Oh my Zsh
 **It will not make you a 10x developer...but you may feel like one.**
 
 
-##Getting started
+## Getting started
 ### Prerequisites
 
 - A Unix-like operating system: macOS, Linux, BSD. 
@@ -26,7 +26,7 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
-##Configuration
+## Configuration
 In order to configure your (oh my) zsh in almost all cases you will modify your ~/.zshrc file. \
 
 **Important:** Don't forget to apply your changes so they take effect: 
