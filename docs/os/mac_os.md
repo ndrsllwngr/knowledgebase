@@ -18,7 +18,8 @@ title: macOS
 - [ ] Sync cloud services
 - [ ] *Screenshot System Preferences*
 
-### Create bootable installer for macOS [https://support.apple.com/en-us/HT201372](https://support.apple.com/en-us/HT201372)
+### Create bootable installer for macOS 
+[https://support.apple.com/en-us/HT201372](https://support.apple.com/en-us/HT201372)
 #### Download macOS from the App Store
 1. Download macOS from the App Store. To download, use a Mac that is compatible with the version of macOS you're downloading.
 2. When the macOS installer opens, quit it without continuing installation.
@@ -56,3 +57,35 @@ The default macOS filesystem is case-insensitive.
 3. Select the `Install [..]` volume
 4. Start Disk Utility and erase everything and format the drive to `APFS` (previous versions used `OS X Extended` and `GUID Partition Map`)
 5. Go back to the Main menu and install macOS
+
+##Must Have Tools
+###[Homebrew](https://brew.sh/index_de)
+The missing package manager for macOS.\
+**We have a seperate section on this [here](../applications/homebrew.md).**
+
+####Installation
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+###[iTerm2](https://iterm2.com/index.html)
+iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.14 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
+
+
+##Recommended Tools
+
+###[JetBrains Toolbox](https://www.jetbrains.com/lp/toolbox/)
+One tool to download them all. IntelliJ, PyCharm, DataGrip and all their brothers & sisters.
+
+###[IntelliJ IDEA](https://www.jetbrains.com/idea/)
+IntelliJ is a highly customizable, feature rich and well designed IDE made by developers for developers.
+
+###[Visual Studio Code](https://code.visualstudio.com)
+
+Code editing.Redefined. Free. Built on open source. Runs everywhere. 
+
+**We have a seperate section on this [here](../applications/visual_studio_code.md).**
+
+###[GitKraken](https://www.gitkraken.com)
+Legendary Git GUI client for Windows, Mac & Linux
+
