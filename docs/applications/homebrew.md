@@ -39,7 +39,7 @@ brew upgrade
 brew cleanup --prune-prefix
 ```
 
-**Pro tip:** Add an alias to your .zshrc or sbashrc and combine given commands:
+**Pro tip:** Add an alias to your .zshrc or .bashrc and combine given commands:
 
 ```shell
 # Updating brew completely
