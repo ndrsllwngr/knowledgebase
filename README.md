@@ -10,7 +10,7 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 ### How to add knowledge?
 Create a new branch, commit your edits and open a pull request.
 
-## How to add a new topic?
+### How to add a new topic?
 1. Create a new file in `docs/<category>/<topic>.md`
 2. Add a header
 ```md
