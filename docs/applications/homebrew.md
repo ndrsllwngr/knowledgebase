@@ -14,7 +14,7 @@ title: Homebrew
 
 ### Installation
 
-```sh
+```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -40,11 +40,9 @@ brew cleanup --prune-prefix
 ```
 
 **Pro tip:** Add an alias to your .zshrc or .bashrc and combine given commands:
-
 ```shell
 # Updating brew completely
 alias brewall="brew doctor && brew update && brew outdated && brew upgrade && brew cleanup --prune-prefix"
-
 ```
 
 ## Resources
