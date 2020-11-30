@@ -5,6 +5,6 @@ module.exports = {
     "Frameworks": ['frameworks/android_native', 'frameworks/next_js', 'frameworks/node_js', 'frameworks/vue_js'],
     "Libraries": ['libraries/react'],
     "OS": ['os/linux', 'os/macos'],
-    "Applications": ['applications/git', 'applications/shell', 'applications/visual_studio_code']
+    "Applications": ['applications/git', 'applications/homebrew', 'applications/oh_my_zsh', 'applications/shell', 'applications/visual_studio_code']
   },
 };
