@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: Welcome to the knowledge base
+title: Welcome
 slug: /
 ---
 
