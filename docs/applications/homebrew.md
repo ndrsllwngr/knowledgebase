@@ -6,13 +6,13 @@ title: Homebrew
 ## About
 
 > Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS operating system and Linux
-> [(Wikipedia, 2020)](<https://en.wikipedia.org/wiki/Homebrew_(package_manager)>)
+> [(Wikipedia, 2020)](https://en.wikipedia.org/wiki/Homebrew_(package_manager))
 
 - [https://brew.sh/](https://brew.sh/)
 
 ## Getting started
 
-#### Installation
+### Installation
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -20,7 +20,7 @@ title: Homebrew
 
 ## Useful commands
 
-#### Keep homebrew and formulae up-to-date
+### Keep homebrew and formulae up-to-date
 
 ```shell
 # Checks your system for potential problems. Just for debugging. If everthing is working fine, don`t worry about displayed issues
