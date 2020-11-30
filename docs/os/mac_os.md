@@ -64,11 +64,6 @@ The missing package manager for macOS.
 
 **We have a seperate section on this [here](../applications/homebrew.md).**
 
-#### Installation
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
 ### [iTerm2](https://iterm2.com/index.html)
 iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.14 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
 
