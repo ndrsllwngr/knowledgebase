@@ -73,7 +73,7 @@ The missing package manager for macOS.
 iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.14 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
 
 
-##Recommended Tools
+## Recommended Tools
 
 ### [JetBrains Toolbox](https://www.jetbrains.com/lp/toolbox/)
 One tool to download them all. IntelliJ, PyCharm, DataGrip and all their brothers & sisters.
