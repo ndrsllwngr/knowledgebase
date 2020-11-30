@@ -60,7 +60,8 @@ The default macOS filesystem is case-insensitive.
 
 ## Must Have Tools
 ### [Homebrew](https://brew.sh/index_de)
-The missing package manager for macOS. \
+The missing package manager for macOS. 
+
 **We have a seperate section on this [here](../applications/homebrew.md).**
 
 #### Installation
