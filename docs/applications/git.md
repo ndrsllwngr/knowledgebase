@@ -71,9 +71,24 @@ git push --set-upstream origin incredibly_descriptive_branch_name
 git reset --soft HEAD^
 ```
 
-#### Reset local branch (throw away changes)
+#### Git Hard Reset to HEAD
+- Reset local branch (throw away changes)
+- The `-–hard` option is used in order to reset the files of the index (or the staging area) and of the working directory. You will be left with the untracked files of your working directory.
 ```shell
-git reset --hard HEAD^
+# (going back to HEAD)
+git reset --hard HEAD       
+
+# (going back to the commit before HEAD)
+git reset --hard HEAD^      
+
+# (going back two commits before HEAD)
+git reset --hard HEAD~2     
+```
+
+#### Git Hard Reset to origin HEAD (throw away changes)
+```shell
+# (going back to HEAD of remote origin branch)
+git reset --hard origin/develop
 ```
 
 #### Delete branch
