@@ -12,6 +12,13 @@ title: Git
 ## Getting started
 - [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
+## Ignore files
+Add a `.gitignore` to your project. It specifies intentionally untracked files to ignore.
+
+:::info
+Use [https://www.toptal.com/developers/gitignore](https://www.toptal.com/developers/gitignore) to create useful .gitignore files for your project.
+:::
+
 ### SSH
 In order to be able to communicate with your repositories via SSH you need to first generate a new SSH key (if you haven't already) and add it to your GitHub, bitBucket etc. account.
 
