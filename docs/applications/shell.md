@@ -24,7 +24,7 @@ cat ~/.ssh/id_rsa.pub
 nano ~/.zshrc
 
 # Add a line similar to this one
-alias my_super_cool_command="echo "\super cool command\""
+alias my_super_cool_command="echo \"super cool command\""
 
 # Source your config file to apply changes
 source .zshrc
