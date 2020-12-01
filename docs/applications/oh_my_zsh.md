@@ -40,6 +40,8 @@ Powerlevel10k offers a whole lot more and is extremely configurable, best is to 
 
 If you want to trigger the configuration wizard immediately, simply run `p10k configure` to discover all options, which are plentiful.
 
+**Important:** Powerlevel10k will not work with standard fonts. The configuration wizzard will install a patched font called *MesloLGS NF* which will be able to display all the cool icons & pictograms Powerlevel10k uses. If you want to use another font or need to set *MesloLGS NF* for your iTerm2/VS Code/IntelliJ check the [fonts](important-fonts) section.
+
 ## Configuration
 In order to configure your (oh my) zsh in almost all cases you will modify your ~/.zshrc file. \
 
@@ -48,12 +50,10 @@ In order to configure your (oh my) zsh in almost all cases you will modify your 
 source ~/.zshrc
 ```
 
-
 **Pro tip:** use *nano* instead of vim:
 ```shell
 nano ~/.zshrc
 ```
-
 
 ### Plugins
 
@@ -143,6 +143,20 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 )
 ```
 
+#### **Important** Fonts
+A lot of themes will include special characters, icons or even emojis. These will most probably not work out of the Box, because you need a **patched font**.
+
+- [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
+- [Source Code Pro + Font Awesome](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf), this one is needed if you want the icons from Font Awesome as shown in the screenshot for Powerlevel10k.
+- [Others @ powerline fonts](https://github.com/powerline/fonts)
+    
+Open the downloaded font and press "Install Font".
+
+Set this font in iTerm2 (iTerm → Preferences → Profiles → Text → Font), in the dropdown select the desired Font. You will see it change on the fly.
+
+Restart iTerm2 for all changes to take effect.
+
+### Miscellaneous
 #### Enable word jumps and word deletion, aka natural text selection
 
 By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Presets... → Natural Text Editing → Boom! Head explodes"
