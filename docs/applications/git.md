@@ -12,6 +12,10 @@ title: Git
 ## Getting started
 - [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
+### Authentication via SSH
+In order to be able to communicate with your repositories via SSH you need to first [generate a new SSH key](shell.md#generate-ssh-key) (if you haven't already) and add it to your GitHub, bitBucket etc. account.
+
+
 ## Create a new repository
 Create a new folder, open it and perform
 ```shell
@@ -139,19 +143,6 @@ git reset --hard HEAD~2
 ```shell
 # (going back to HEAD of remote origin branch)
 git reset --hard origin/develop
-```
-
-## Authentication via SSH
-In order to be able to communicate with your repositories via SSH you need to first generate a new SSH key (if you haven't already) and add it to your GitHub, bitBucket etc. account.
-
-### Generate SSH key
-```shell
-# This generates a new ssh key which will be stored in your ~/.ssh/ folder. 
-# Hint: you will be asked if you want to set a passphrase aka. a password for your ssh key which you will be asked everytime you use it. This is optional.
-ssh-keygen -t rsa -C "your_email@example.com"
-
-# Show your ssh (public) key
-cat ~/.ssh/id_rsa.pub
 ```
 
 ## Useful commands
