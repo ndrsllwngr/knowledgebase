@@ -26,10 +26,24 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
+### Recommendation: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Powerlevel10k is a pack of extensions and a theme for for your zsh. 
+
+Install it by executing the following command:
+```sh 
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Then edit your `~/.zshrc` and set `ZSH_THEME="powerlevel10k/powerlevel10k"`. Once you do so, when you start a new terminal session, the Powerlevel10 configure wizard will be launched to set your prompt, beware, there are many many options!
+
+Powerlevel10k offers a whole lot more and is extremely configurable, best is to [check its project page](https://github.com/romkatv/powerlevel10k#extremely-customizable).
+
+If you want to trigger the configuration wizard immediately, simply run `p10k configure` to discover all options, which are plentiful.
+
 ## Configuration
 In order to configure your (oh my) zsh in almost all cases you will modify your ~/.zshrc file. \
 
-**Important:** Don't forget to apply your changes so they take effect: 
+**Important:** Don't forget to apply your changes after editing the config file so they take effect: 
 ```sh 
 source ~/.zshrc
 ```
@@ -45,7 +59,7 @@ nano ~/.zshrc
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can take a look in the [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's currently available.
 
-##### Enabling Plugins
+#### Enabling Plugins
 
 Once you spot a plugin (or several) that you'd like to use with Oh My Zsh, you'll need to enable them in the `.zshrc` file. You'll find the zshrc file in your `$HOME` directory. Open it with your favorite text editor and you'll see a spot to list all the plugins you want to load.
 
@@ -65,11 +79,14 @@ plugins=(
 
 _Note that the plugins are separated by whitespace (spaces, tabs, new lines...). **Do not** use commas between them or it will break._
 
-##### Using Plugins
+#### Using Plugins
 
 Each plugin includes a __README__, documenting it. This README should show the aliases (if the plugin adds any) and extra goodies that are included in that particular plugin.
 
-##### Recommended Plugins
+#### Recommended Plugins
+
+**Important:** Don't forget to [enable your plugin](#enabling-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
+
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 ```shell
@@ -78,16 +95,15 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
-**Important:** Don't forget to [enable your plugin](#using-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
 
 ### Themes
 
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred and fifty themes now bundled. Most of them have [screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We are working on updating this!). Check them out!
 
-##### Selecting a Theme
+#### Selecting a Theme
 
 _Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
 
@@ -127,14 +143,18 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 )
 ```
 
-##### Disable user@host prefix
+#### Enable word jumps and word deletion, aka natural text selection
+
+By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Presets... → Natural Text Editing → Boom! Head explodes"
+
+#### Disable user@host prefix
 *Append the following line to your ~/.zshrc file:*
 ```shell
 # Remove user@host from shell
 prompt_context(){}
 ```
 
-##### Add PATH variables
+#### Add PATH variables
 *Append the following line(s) to your ~/.zshrc file:*
 ```shell
 export PATH=/your/very/special/path:$PATH
