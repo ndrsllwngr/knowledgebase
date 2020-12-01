@@ -26,26 +26,42 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
+### Recommendation: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Powerlevel10k is a pack of extensions and a theme for for your zsh. 
+
+Install it by executing the following command:
+```sh 
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Then edit your `~/.zshrc` and set `ZSH_THEME="powerlevel10k/powerlevel10k"`. Once you do so, when you start a new terminal session, the Powerlevel10 configure wizard will be launched to set your prompt, beware, there are many many options!
+
+Powerlevel10k offers a whole lot more and is extremely configurable, best is to [check its project page](https://github.com/romkatv/powerlevel10k#extremely-customizable).
+
+If you want to trigger the configuration wizard immediately, simply run `p10k configure` to discover all options, which are plentiful.
+
+**Important:** Powerlevel10k will not work with standard fonts. The configuration wizzard will install a patched font called *MesloLGS NF* which will be able to display all the cool icons & pictograms Powerlevel10k uses. 
+
+If you want to use another font or need to set *MesloLGS NF* for your iTerm2/VS Code/IntelliJ check the [fonts](#fonts) section.
+
 ## Configuration
 In order to configure your (oh my) zsh in almost all cases you will modify your ~/.zshrc file. \
 
-**Important:** Don't forget to apply your changes so they take effect: 
+**Important:** Don't forget to apply your changes after editing the config file so they take effect: 
 ```sh 
 source ~/.zshrc
 ```
-
 
 **Pro tip:** use *nano* instead of vim:
 ```shell
 nano ~/.zshrc
 ```
 
-
 ### Plugins
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can take a look in the [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's currently available.
 
-##### Enabling Plugins
+#### Enabling Plugins
 
 Once you spot a plugin (or several) that you'd like to use with Oh My Zsh, you'll need to enable them in the `.zshrc` file. You'll find the zshrc file in your `$HOME` directory. Open it with your favorite text editor and you'll see a spot to list all the plugins you want to load.
 
@@ -65,11 +81,14 @@ plugins=(
 
 _Note that the plugins are separated by whitespace (spaces, tabs, new lines...). **Do not** use commas between them or it will break._
 
-##### Using Plugins
+#### Using Plugins
 
 Each plugin includes a __README__, documenting it. This README should show the aliases (if the plugin adds any) and extra goodies that are included in that particular plugin.
 
-##### Recommended Plugins
+#### Recommended Plugins
+
+**Important:** Don't forget to [enable your plugin](#enabling-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
+
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 ```shell
@@ -78,16 +97,15 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
-**Important:** Don't forget to [enable your plugin](#using-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
 
 ### Themes
 
 We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred and fifty themes now bundled. Most of them have [screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We are working on updating this!). Check them out!
 
-##### Selecting a Theme
+#### Selecting a Theme
 
 _Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
 
@@ -127,14 +145,46 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 )
 ```
 
-##### Disable user@host prefix
+### Fonts
+A lot of themes will include special characters, icons or even emojis. These will most probably not work out of the Box, because you need a **patched font**.
+
+- [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
+- [Source Code Pro + Font Awesome](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf), this one is needed if you want the icons from Font Awesome as shown in the screenshot for Powerlevel10k.
+- [Others @ powerline fonts](https://github.com/powerline/fonts)
+    
+Open the downloaded font and press *Install Font*.
+
+Set this font in iTerm2 (iTerm → Preferences → Profiles → Text → Font), in the dropdown select the desired Font. You will see it change on the fly.
+
+Restart iTerm2 for all changes to take effect.
+
+#### Visual Studio Code
+
+Installing a patched font will mess up the integrated terminal in VS Code unless you use the proper settings. You'll need to go to settings (CMD + ,) and add or edit the following values:
+
+- for Source Code Pro + Font Awesome: `"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'"`. The single quotes are important! Restart VS Code after the config change.
+- for Source Code Pro: `"terminal.integrated.fontFamily": "Source Code Pro for Powerline"`
+- for Meslo: `"terminal.integrated.fontFamily": "MesloLGs NF"`
+- for other fonts you'll need to check the font name in Font Book. You can right click on them on select "Show in Finder" to get the exact name.
+
+You can also set the fontsize e.g.: `"terminal.integrated.fontSize": 14`
+
+#### IntelliJ/PyCharm etc.
+*coming soon*
+
+### Miscellaneous
+#### Enable word jumps and word deletion, aka natural text selection
+
+By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Presets... → Natural Text Editing → Boom! Head explodes"
+
+#### Disable user@host prefix
 *Append the following line to your ~/.zshrc file:*
 ```shell
 # Remove user@host from shell
 prompt_context(){}
 ```
 
-##### Add PATH variables
+#### Add PATH variables
 *Append the following line(s) to your ~/.zshrc file:*
 ```shell
 export PATH=/your/very/special/path:$PATH
