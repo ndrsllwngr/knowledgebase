@@ -6,11 +6,9 @@ slug: /
 
 ## Languages
 - [CSS](../languages/css.md)
-- [Haskell](../languages/haskell.md)
 - [HTML](../languages/html.md)
 - [Java](../languages/java.md)
 - [JavaScript](../languages/javascript.md)
-- [Prolog](../languages/prolog.md)
 - [Python](../languages/python.md)
 - [Rust](../languages/rust.md)
 - [Scala](../languages/scala.md)
