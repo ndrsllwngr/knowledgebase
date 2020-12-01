@@ -145,7 +145,7 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 )
 ```
 
-#### Fonts
+### Fonts
 A lot of themes will include special characters, icons or even emojis. These will most probably not work out of the Box, because you need a **patched font**.
 
 - [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
@@ -157,6 +157,20 @@ Open the downloaded font and press *Install Font*.
 Set this font in iTerm2 (iTerm → Preferences → Profiles → Text → Font), in the dropdown select the desired Font. You will see it change on the fly.
 
 Restart iTerm2 for all changes to take effect.
+
+#### Visual Studio Code
+
+Installing a patched font will mess up the integrated terminal in VS Code unless you use the proper settings. You'll need to go to settings (CMD + ,) and add or edit the following values:
+
+- for Source Code Pro + Font Awesome: `"terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'"`. The single quotes are important! Restart VS Code after the config change.
+- for Source Code Pro: `"terminal.integrated.fontFamily": "Source Code Pro for Powerline"`
+- for Meslo: `"terminal.integrated.fontFamily": "MesloLGs NF"`
+- for other fonts you'll need to check the font name in Font Book. You can right click on them on select "Show in Finder" to get the exact name.
+
+You can also set the fontsize e.g.: `"terminal.integrated.fontSize": 14`
+
+#### IntelliJ/PyCharm etc.
+*coming soon*
 
 ### Miscellaneous
 #### Enable word jumps and word deletion, aka natural text selection
