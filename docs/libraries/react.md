@@ -11,3 +11,8 @@ title: React
 
 ## Getting started
 - [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+
+:::caution
+- add storybook
+- next.js
+:::
