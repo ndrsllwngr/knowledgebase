@@ -4,9 +4,7 @@ title: Welcome
 slug: /
 ---
 
-
-## Content
-### Languages
+## Languages
 - [CSS](../languages/css.md)
 - [Haskell](../languages/haskell.md)
 - [HTML](../languages/html.md)
@@ -18,20 +16,20 @@ slug: /
 - [Scala](../languages/scala.md)
 - [TypeScript](../languages/typescript.md)
 
-### Frameworks
+## Frameworks
 - [Android native](../frameworks/android_native.md)
 - [Next.js](../frameworks/next_js.md)
 - [Node.js](../frameworks/node_js.md)
 - [vue.js](../frameworks/vue_js.md)
 
-### Libraries
+## Libraries
 - [React](../libraries/react.md)
 
-### OS
+## OS
 - [Linux](../os/linux.md)
 - [macOS](../os/mac_os.md)
 
-### Applications
+## Applications
 - [Git](../applications/git.md)
 - [Homebrew](../applications/homebrew.md)
 - [Shell](../applications/shell.md)
