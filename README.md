@@ -1,7 +1,7 @@
 # knowledgebase
 
 - Snippets that save time.
-- https://open-knowledgebase.vercel.app/
+- https://open-knowledgebase.vercel.app/docs/
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
