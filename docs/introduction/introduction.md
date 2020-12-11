@@ -5,6 +5,7 @@ slug: /
 ---
 
 ## Languages
+
 - [CSS](../languages/css.md)
 - [Go](../languages/go.md)
 - [HTML](../languages/html.md)
@@ -16,19 +17,23 @@ slug: /
 - [TypeScript](../languages/typescript.md)
 
 ## Frameworks
+
 - [Android native](../frameworks/android_native.md)
 - [Next.js](../frameworks/next_js.md)
 - [Node.js](../frameworks/node_js.md)
 - [vue.js](../frameworks/vue_js.md)
 
 ## Libraries
+
 - [React](../libraries/react.md)
 
 ## OS
+
 - [Linux](../os/linux.md)
 - [macOS](../os/mac_os.md)
 
 ## Applications
+
 - [Git](../applications/git.md)
 - [Homebrew](../applications/homebrew.md)
 - [Shell](../applications/shell.md)

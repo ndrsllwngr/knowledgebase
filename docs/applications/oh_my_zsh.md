@@ -7,11 +7,11 @@ title: Oh my Zsh
 
 **It will not make you a 10x developer...but you may feel like one.**
 
-
 ## Getting started
+
 ### Prerequisites
 
-- A Unix-like operating system: macOS, Linux, BSD. 
+- A Unix-like operating system: macOS, Linux, BSD.
 - [Zsh](https://www.zsh.org) should be installed. If not pre-installed (run `zsh --version` to confirm), check the following wiki instructions here: [Installing ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 - `curl` or `wget` should be installed
 - `git` should be installed (recommended v2.4.11 or higher)
@@ -21,16 +21,18 @@ title: Oh my Zsh
 Oh My Zsh is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl`, `wget` or another similar tool.
 
 | Method    | Command                                                                                           |
-|:----------|:--------------------------------------------------------------------------------------------------|
+| :-------- | :------------------------------------------------------------------------------------------------ |
 | **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 | **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
 | **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
 
 ### Recommendation: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-Powerlevel10k is a pack of extensions and a theme for for your zsh. 
+
+Powerlevel10k is a pack of extensions and a theme for for your zsh.
 
 Install it by executing the following command:
-```sh 
+
+```shell
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
@@ -40,19 +42,22 @@ Powerlevel10k offers a whole lot more and is extremely configurable, best is to 
 
 If you want to trigger the configuration wizard immediately, simply run `p10k configure` to discover all options, which are plentiful.
 
-**Important:** Powerlevel10k will not work with standard fonts. The configuration wizzard will install a patched font called *MesloLGS NF* which will be able to display all the cool icons & pictograms Powerlevel10k uses. 
+**Important:** Powerlevel10k will not work with standard fonts. The configuration wizzard will install a patched font called _MesloLGS NF_ which will be able to display all the cool icons & pictograms Powerlevel10k uses.
 
-If you want to use another font or need to set *MesloLGS NF* for your iTerm2/VS Code/IntelliJ check the [fonts](#fonts) section.
+If you want to use another font or need to set _MesloLGS NF_ for your iTerm2/VS Code/IntelliJ check the [fonts](#fonts) section.
 
 ## Configuration
+
 In order to configure your (oh my) zsh in almost all cases you will modify your ~/.zshrc file. \
 
-**Important:** Don't forget to apply your changes after editing the config file so they take effect: 
-```sh 
+**Important:** Don't forget to apply your changes after editing the config file so they take effect:
+
+```shell
 source ~/.zshrc
 ```
 
-**Pro tip:** use *nano* instead of vim:
+**Pro tip:** use _nano_ instead of vim:
+
 ```shell
 nano ~/.zshrc
 ```
@@ -73,7 +78,7 @@ For example, this might begin to look like this:
 
 ```shell
 plugins=(
-  git 
+  git
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -83,23 +88,23 @@ _Note that the plugins are separated by whitespace (spaces, tabs, new lines...).
 
 #### Using Plugins
 
-Each plugin includes a __README__, documenting it. This README should show the aliases (if the plugin adds any) and extra goodies that are included in that particular plugin.
+Each plugin includes a **README**, documenting it. This README should show the aliases (if the plugin adds any) and extra goodies that are included in that particular plugin.
 
 #### Recommended Plugins
 
-**Important:** Don't forget to [enable your plugin](#enabling-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute ```source ~/.zshrc``` for your changes to take effect.
-
+**Important:** Don't forget to [enable your plugin](#enabling-plugins) by adding it to your plugins list in your ~/.zshrc file and then execute `source ~/.zshrc` for your changes to take effect.
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
-
 
 ### Themes
 
@@ -146,13 +151,14 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 ```
 
 ### Fonts
+
 A lot of themes will include special characters, icons or even emojis. These will most probably not work out of the Box, because you need a **patched font**.
 
 - [Source Code Pro](https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf)
 - [Source Code Pro + Font Awesome](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf), this one is needed if you want the icons from Font Awesome as shown in the screenshot for Powerlevel10k.
 - [Others @ powerline fonts](https://github.com/powerline/fonts)
-    
-Open the downloaded font and press *Install Font*.
+
+Open the downloaded font and press _Install Font_.
 
 Set this font in iTerm2 (iTerm → Preferences → Profiles → Text → Font), in the dropdown select the desired Font. You will see it change on the fly.
 
@@ -170,22 +176,28 @@ Installing a patched font will mess up the integrated terminal in VS Code unless
 You can also set the fontsize e.g.: `"terminal.integrated.fontSize": 14`
 
 #### IntelliJ/PyCharm etc.
-*coming soon*
+
+_coming soon_
 
 ### Miscellaneous
+
 #### Enable word jumps and word deletion, aka natural text selection
 
 By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Presets... → Natural Text Editing → Boom! Head explodes"
 
 #### Disable user@host prefix
-*Append the following line to your ~/.zshrc file:*
+
+_Append the following line to your ~/.zshrc file:_
+
 ```shell
 # Remove user@host from shell
 prompt_context(){}
 ```
 
 #### Add PATH variables
-*Append the following line(s) to your ~/.zshrc file:*
+
+_Append the following line(s) to your ~/.zshrc file:_
+
 ```shell
 export PATH=/your/very/special/path:$PATH
 # Use quotes if you like

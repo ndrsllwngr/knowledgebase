@@ -6,7 +6,7 @@ title: Homebrew
 ## About
 
 > Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS operating system and Linux
-> [(Wikipedia, 2020)](https://en.wikipedia.org/wiki/Homebrew_(package_manager))
+> [(Wikipedia, 2020)](<https://en.wikipedia.org/wiki/Homebrew_(package_manager)>)
 
 - [https://brew.sh/](https://brew.sh/)
 
@@ -40,6 +40,7 @@ brew cleanup --prune-prefix
 ```
 
 **Pro tip:** Add an alias to your .zshrc or .bashrc and combine given commands:
+
 ```shell
 # Updating brew completely
 alias brewall="brew doctor && brew update && brew outdated && brew upgrade && brew cleanup --prune-prefix"

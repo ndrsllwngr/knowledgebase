@@ -3,8 +3,8 @@ id: next_js
 title: Next.js
 ---
 
-
 ## About
+
 > Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
 > [(Wikipedia, 2020)](https://en.wikipedia.org/wiki/Next.js)
 
@@ -14,4 +14,5 @@ title: Next.js
 - [https://nextjs.org/](https://nextjs.org/)
 
 ## Getting started
+
 - [https://nextjs.org/docs](https://nextjs.org/docs)
