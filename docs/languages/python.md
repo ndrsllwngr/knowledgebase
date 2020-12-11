@@ -70,6 +70,11 @@ source venv/bin/activate
 deactivate
 ```
 
+#### Create a  requirements file
+```shell 
+pip freeze > requirements.txt 
+```
+
 #### Install dependencies from a requirements file
 ```shell 
 pip install -r requirements.txt 
