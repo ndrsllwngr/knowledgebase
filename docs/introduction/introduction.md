@@ -6,6 +6,7 @@ slug: /
 
 ## Languages
 - [CSS](../languages/css.md)
+- [Go](../languages/go.md)
 - [HTML](../languages/html.md)
 - [Java](../languages/java.md)
 - [JavaScript](../languages/javascript.md)

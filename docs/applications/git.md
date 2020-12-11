@@ -67,6 +67,18 @@ git remote add origin <server>
 ```
 Now you are able to push changes to your remote server.
 
+## Remove a file from Git repository
+Remove a file from Git repository without deleting it from local filesystem
+For a single file:
+```shell
+git rm --chached [filename]
+```
+and for a single directory:
+```shell
+git rm --chached -r [directory]
+```
+
+
 ## Branching
 Create a new branch named _feature_x_ and switch to it using
 ```shell
