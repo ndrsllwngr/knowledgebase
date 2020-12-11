@@ -21,7 +21,7 @@ title: <topic title>
 
 ## About
 ```
-3. Add to [`/sidebar.js`](https://github.com/ndrsllwngr/knowledgebase/blob/main/sidebars.js)
+3. Add to [`/table-of-contents.js`](https://github.com/ndrsllwngr/knowledgebase/blob/main/table-of-contents.js)
 4. Add to [`/docs/introduction/introduction.md`](https://github.com/ndrsllwngr/knowledgebase/blob/main/docs/introduction/introduction.md)
 
 ## Installation

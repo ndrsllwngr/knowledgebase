@@ -1,0 +1,7 @@
+*.md
+**/*.mdx
+.github/
+.vscode/
+node_modules/
+out/
+.next/
