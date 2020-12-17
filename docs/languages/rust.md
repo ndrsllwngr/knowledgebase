@@ -12,4 +12,51 @@ title: Rust
 
 ## Getting started
 
-- [https://www.rust-lang.org/learn/get-started](https://www.rust-lang.org/learn/get-started)
+- Follow [https://www.rust-lang.org/learn/get-started](https://www.rust-lang.org/learn/get-started)
+- Use IntelliJ IDEA from JetBrains with [https://intellij-rust.github.io/](https://intellij-rust.github.io/) plugin
+
+## Rustup: the Rust installer and version management tool
+
+The primary way that folks install Rust is through a tool called Rustup, which is a Rust installer and version management tool.
+- Install Rust
+  ```shel
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+- Update Rust
+  ```shell
+  rustup update
+  ```
+
+## Cargo: the Rust build tool and package manager
+When you install Rustup you’ll also get the latest stable version of the Rust build tool and package manager, also known as Cargo. Cargo does lots of things:
+
+- build your project with `cargo build`
+- run your project with `cargo run`
+- test your project with `cargo test`
+- build documentation for your project with `cargo doc`
+- publish a library to crates.io with `cargo publish`
+
+To test that you have Rust and Cargo installed, you can run this in your terminal of choice:
+```shell
+cargo --version
+```
+
+## Create a new project
+
+```shell
+cargo new my_project
+```
+
+## Clippy: the Rust linter
+A collection of lints to catch common mistakes and improve your Rust code.
+
+- [https://doc.rust-lang.org/stable/book/appendix-04-useful-development-tools.html?highlight=clippy#more-lints-with-clippy](https://doc.rust-lang.org/stable/book/appendix-04-useful-development-tools.html?highlight=clippy#more-lints-with-clippy)
+- To run Clippy’s lints on any Cargo project, enter the following
+  ```shell
+  cargo clippy
+  ```
+
+## Resources
+
+- [https://www.rust-lang.org/learn](https://www.rust-lang.org/learn)
+- [The Rust Programming Language](https://doc.rust-lang.org/book/) (book)
