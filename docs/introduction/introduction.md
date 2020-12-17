@@ -34,6 +34,7 @@ slug: /
 
 ## Applications
 
+- [Docker](../applications/docker.md)
 - [Git](../applications/git.md)
 - [Homebrew](../applications/homebrew.md)
 - [Shell](../applications/shell.md)

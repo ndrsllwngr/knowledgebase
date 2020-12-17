@@ -20,6 +20,7 @@ const TOC = {
   Libraries: ['libraries/react'],
   OS: ['os/linux', 'os/macos'],
   Applications: [
+    'applications/docker',
     'applications/git',
     'applications/homebrew',
     'applications/oh_my_zsh',
