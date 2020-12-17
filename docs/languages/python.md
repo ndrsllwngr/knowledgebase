@@ -104,8 +104,11 @@ pip install -r requirements.txt
    ```shell
    rm -rf venv
    ```
+
 ## Useful snippets
+
 #### Format String
+
 ```python
 text="This"
 
@@ -113,3 +116,19 @@ print("{} {} {} {}!".format(text, 'is', 'super', 'cool')
 
 > This is super cool!
 ```
+
+#### Debug with `ic()` instead of `print()`
+
+- Use [https://github.com/gruns/icecream](https://github.com/gruns/icecream)
+  ```shell
+  pip install icecream
+  ```
+  ```python
+  >>> a = 6
+  >>> def half(i):
+  >>>     return i / 2
+  >>> b = half(ic(a))
+  ic| a: 6
+  >>> ic(b)
+  ic| b: 3
+  ```
