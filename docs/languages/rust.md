@@ -56,6 +56,12 @@ A collection of lints to catch common mistakes and improve your Rust code.
   cargo clippy
   ```
 
+## How to setup a workspace
+- follow [https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html](https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html)
+
+## How to work with Rust in IntelliJ IDEA
+- follow [https://intellij-rust.github.io/docs/quick-start.html](https://intellij-rust.github.io/docs/quick-start.html)
+
 ## Resources
 
 - [https://www.rust-lang.org/learn](https://www.rust-lang.org/learn)
