@@ -60,3 +60,17 @@ A collection of lints to catch common mistakes and improve your Rust code.
 
 - [https://www.rust-lang.org/learn](https://www.rust-lang.org/learn)
 - [The Rust Programming Language](https://doc.rust-lang.org/book/) (book)
+
+## compile error
+
+If you are facing an error like that on new MacOS version.
+```shell
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+```
+It means that you need to install XCode command line, open a Terminal and run this command:
+```shell
+xcode-select --install
+```
+Note:
+If you want to download and install Command Line tools manually, it can be downloaded from: [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/)
+
