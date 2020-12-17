@@ -1,47 +1,48 @@
 module.exports = {
-  title: "knowledgebase",
-  tagline: "Snippets that save time.",
-  url: "https://github.andreasellwanger.com",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "ndrsllwngr", // Usually your GitHub org/user name.
-  projectName: "knowledgebase", // Usually your repo name.
+  title: 'knowledgebase',
+  tagline: 'Snippets that save time.',
+  url: 'https://github.andreasellwanger.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'ndrsllwngr', // Usually your GitHub org/user name.
+  projectName: 'knowledgebase', // Usually your repo name.
   themeConfig: {
     hideableSidebar: true,
     colorMode: {
-      defaultMode: "light",
+      defaultMode: 'light',
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     prism: {
-      theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("prism-react-renderer/themes/dracula"),
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      additionalLanguages: ['rust', 'shell', 'go', 'scala', 'python', 'py', 'jsx'],
     },
     navbar: {
-      title: "knowledgebase",
+      title: 'knowledgebase',
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
       },
       items: [
         {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: "https://github.com/ndrsllwngr/knowledgebase/",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/ndrsllwngr/knowledgebase/',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         // {
         //   title: 'Docs',
@@ -88,12 +89,12 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: "https://github.com/ndrsllwngr/knowledgebase/edit/main/",
+          editUrl: 'https://github.com/ndrsllwngr/knowledgebase/edit/main/',
           // showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -104,7 +105,7 @@ module.exports = {
         //     'https://github.com/ndrsllwngr/knowledgebase/blog',
         // },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
@@ -112,17 +113,17 @@ module.exports = {
   plugins: [
     // ... Your other plugins.
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        language: ["en"],
+        language: ['en'],
         // ```
         // When applying `zh` in language, please install `nodejieba` in your project.
       },
     ],
   ],
-};
+}
