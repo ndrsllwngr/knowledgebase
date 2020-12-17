@@ -105,7 +105,19 @@ pip install -r requirements.txt
    rm -rf venv
    ```
 
-### Debug with `ic()` instead of `print()`
+## Useful snippets
+
+#### Format String
+
+```python
+text="This"
+
+print("{} {} {} {}!".format(text, 'is', 'super', 'cool')
+
+> This is super cool!
+```
+
+#### Debug with `ic()` instead of `print()`
 
 - Use [https://github.com/gruns/icecream](https://github.com/gruns/icecream)
   ```shell
