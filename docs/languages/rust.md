@@ -62,12 +62,23 @@ A collection of lints to catch common mistakes and improve your Rust code.
 ## How to work with Rust in IntelliJ IDEA
 - follow [https://intellij-rust.github.io/docs/quick-start.html](https://intellij-rust.github.io/docs/quick-start.html)
 
+## Debugging with Macro `std::dbg`
+Prints and returns the value of a given expression for quick and dirty debugging.
+Use `dbg!(..)` see [https://doc.rust-lang.org/std/macro.dbg.html](https://doc.rust-lang.org/std/macro.dbg.html)
+
+```rust
+let a = 2;
+let b = dbg!(a * 2) + 1;
+//      ^-- prints: [src/main.rs:2] a * 2 = 4
+assert_eq!(b, 5);
+```
+
 ## Resources
 
 - [https://www.rust-lang.org/learn](https://www.rust-lang.org/learn)
 - [The Rust Programming Language](https://doc.rust-lang.org/book/) (book)
 
-## compile error
+## Compile error?
 
 If you are facing an error like that on new MacOS version.
 ```shell
