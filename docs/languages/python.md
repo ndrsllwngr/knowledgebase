@@ -104,3 +104,12 @@ pip install -r requirements.txt
    ```shell
    rm -rf venv
    ```
+## Useful snippets
+#### Format String
+```python
+text="This"
+
+print("{} {} {} {}!".format(text, 'is', 'super', 'cool')
+
+> This is super cool!
+```
