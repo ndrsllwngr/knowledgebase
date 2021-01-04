@@ -97,7 +97,7 @@ tmux attach -t super_cool_session_name
 ```
 
 #### Exit from session (without killing the session)
-`CTRL` + `B`  ->  d    *or*   `:detach` + `ENTER`
+Press `CTRL` + `B`, now enter `d` (or `:detach`) and press `ENTER`.
 
 #### Kill tmux server & all running sessions
 ```shell
