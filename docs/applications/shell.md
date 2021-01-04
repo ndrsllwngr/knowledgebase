@@ -7,6 +7,16 @@ title: Shell
 
 We highly recommend you to use a modified shell ([Oh my Zsh](oh_my_zsh.md)) to maximise your experince usig the shell.
 
+### Get current user
+```shell
+whoami
+```
+
+### Show current folder content, file sizes & permissions
+```shell
+ll -lha
+```
+
 ### Get IP address
 
 ```shell
