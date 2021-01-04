@@ -37,3 +37,15 @@ alias my_super_cool_command="echo \"super cool command\""
 # Source your config file to apply changes
 source .zshrc
 ```
+
+### Work with .tar archives
+
+```shell
+# List all top level contents of tar file
+tar --exclude="*/*" -tf file.tar
+
+# Extract to current folder
+tar -xf archive.tar.gz
+
+# Extract to folder
+tar -xf archive.tar.gz -C your_super_cool_folder
