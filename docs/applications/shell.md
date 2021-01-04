@@ -68,7 +68,7 @@ tar -xf archive.tar.gz -C your_super_cool_folder
 
 ## tmux
 
-(tmux)[https://github.com/tmux/tmux/wiki] is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.
+[tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.
 
 ### Installation
 ```shell
