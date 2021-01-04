@@ -61,7 +61,45 @@ tar -xf archive.tar.gz
 ```
 **Hint:** The `-v` option (-> `-xvf`) will make the tar command more visible and print the names of the files being extracted on the terminal. 
 
-# Extract to specified folder
+#### Extract to specified folder
 ```shell
 tar -xf archive.tar.gz -C your_super_cool_folder
+```
+
+## tmux
+
+(tmux)[https://github.com/tmux/tmux/wiki] is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.
+
+### Installation
+```shell
+sudo apt-get install tmux 
+```
+
+### Manage tmux sessions
+#### Start new session
+```shell
+tmux
+```
+
+#### Create session with a name
+```shell
+tmux new -s super_cool_session_name 
+```
+
+#### View all running sessions session
+```shell
+tmux ls
+```
+
+#### Attach to session 
+```shell
+tmux attach -t super_cool_session_name 
+```
+
+#### Exit from session (without killing the session)
+`CTRL` + `B`  ->  d    *or*   `:detach` + `ENTER`
+
+#### Kill tmux server & all running sessions
+```shell
+tmux kill-server 
 ```
