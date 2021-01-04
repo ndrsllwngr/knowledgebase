@@ -40,12 +40,18 @@ source .zshrc
 
 ### Work with .tar archives
 
+#### List all top level contents of tar file
 ```shell
-# List all top level contents of tar file
 tar --exclude="*/*" -tf file.tar
+```
 
-# Extract to current folder
+#### Extract to current folder
+```shell
 tar -xf archive.tar.gz
+```
+**Hint:** The `-v` option (-> `-xvf`) will make the tar command more visible and print the names of the files being extracted on the terminal. 
 
-# Extract to folder
+# Extract to specified folder
+```shell
 tar -xf archive.tar.gz -C your_super_cool_folder
+```
