@@ -59,7 +59,7 @@ tar --exclude="*/*" -tf file.tar
 ```shell
 tar -xf archive.tar.gz
 ```
-**Hint:** The `-v` option (-> `-xvf`) will make the tar command more visible and print the names of the files being extracted on the terminal. 
+**Hint:** The `-v` option (e.g.`-xvf`) will make the tar command more visible and print the names of the files being extracted on the terminal. 
 
 #### Extract to specified folder
 ```shell
