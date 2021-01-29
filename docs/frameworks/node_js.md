@@ -18,13 +18,13 @@ title: Node.js
 [nvm](https://github.com/nvm-sh/nvm) is a version manager for [node.js](https://nodejs.org/en/), designed to be installed per-user, and invoked per-shell. nvm works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and windows WSL.
 
 #### Installation
-```sh
+```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 
 #### Install latest node.js version
 
-```sh
+```shell
 nvm install node # "node" is an alias for the latest version
 ```
 
@@ -38,30 +38,30 @@ The first version installed becomes the default. New shells will start with the 
 
 #### List all available versions
 
-```sh
+```shell
 nvm ls-remote
 ```
 #### User a specified version
 
-```sh
+```shell
 nvm use node # or 6.14.4, 10.10.0, 8.9.1, etc
 ```
 
 #### Run node
 
-```sh
+```shell
 nvm run node --version
 ```
 
 #### Run node with specific version
 
-```sh
+```shell
 nvm exec 4.2 node --version
 ```
 
 #### Get path where specified version was installed
 
-```sh
+```shell
 nvm which 5.0
 ```
 
@@ -69,54 +69,54 @@ nvm which 5.0
 [Yarn](https://yarnpkg.com) is a package manager that doubles down as project manager. Whether you work on one-shot projects or large monorepos, as a hobbyist or an enterprise user, we've got you covered.
 
 #### Installation
-```sh
+```shell
 npm install -g yarn
 ```
 
 #### Accessing the list of commands
-```sh
+```shell
 yarn help
 ```
 
 #### Starting a new project
-```sh
+```shell
 yarn init
 ```
 
 #### Installing all the dependencies
-```sh
+```shell
 yarn
 # OR
 yarn install
 ```
 
 #### Adding a dependency
-```sh
+```shell
 yarn add [package]
 yarn add [package]@[version]
 yarn add [package]@[tag]
 ```
 
 #### Adding a dependency to different categories of dependencies
-```sh
+```shell
 yarn add [package] --dev  # dev dependencies
 yarn add [package] --peer # peer dependencies
 ```
 
 #### Upgrading a dependency
-```sh
+```shell
 yarn up [package]
 yarn up [package]@[version]
 yarn up [package]@[tag]
 ```
 
 #### Upgrading a dependency
-```sh
+```shell
 yarn remove [package]
 ```
 
 #### Upgrading Yarn itself
-```sh
+```shell
 yarn set version latest
 yarn set version from sources
 ```
