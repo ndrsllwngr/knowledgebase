@@ -21,11 +21,13 @@ Manage multiple python versions comfortably
 
 #### Installation
 
-1. Install via [Homebrew](https://brew.sh)
+**MacOS** 
+1. **Install via [Homebrew]**(https://brew.sh)
    ```shell
    brew update
    brew install pyenv
    ```
+   
 2. **Add `pyenv init` to your shell** to enable shims and autocompletion.
    Please make sure `eval "$(pyenv init -)"` is placed toward the end of the shell
    configuration file since it manipulates `PATH` during the initialization.
@@ -33,10 +35,31 @@ Manage multiple python versions comfortably
    echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
    ```
    **Bash note**: Modify your `~/.bash_profile` file instead of `~/.zshrc`.
-3. Restart shell
+3. **Restart shell**
    ```shell
    source ~/.zshrc
    ```
+   
+**Debian based Linux**
+  
+1. **Install dependencies**
+  ```shell
+  sudo apt install -y make build-essential libssl-dev zlib1g-dev  libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils   tk-dev libffi-dev liblzma-dev python-openssl git
+```
+  
+  
+2. **Clone the repository**
+```shell
+  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+  ```
+  
+3. **Update .bashrc**
+  ```shell
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrcnano
+  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init --path)"\nfi' >> ~/.bashrc
+  ```
+
 
 #### Download specific python version
 
